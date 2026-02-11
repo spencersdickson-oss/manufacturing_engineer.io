@@ -1,1 +1,90 @@
-<PASTE INDEX HTML HERE>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Your Name</span>
+      </a>
+      <nav class="navlinks" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">Portfolio</div>
+      <h1>Builder mindset. Clean execution.</h1>
+      <p>
+        I’m a hands-on engineer who likes practical systems, reliable processes, and shipping work that holds up.
+        This is a lightweight static site designed for GitHub Pages.
+      </p>
+
+      <div class="badges" aria-label="Highlights">
+        <div class="badge"><span class="dot" aria-hidden="true"></span> Manufacturing / Systems</div>
+        <div class="badge"><span class="dot" aria-hidden="true"></span> Troubleshooting &amp; Root Cause</div>
+        <div class="badge"><span class="dot" aria-hidden="true"></span> Continuous Improvement</div>
+      </div>
+
+      <div class="buttonrow">
+        <a class="btn primary" href="projects.html">View Projects</a>
+        <a class="btn" href="contact.html">Contact Me</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>What I do</h2>
+        <ul>
+          <li>Turn messy problems into clear plans and measurable outcomes.</li>
+          <li>Support production reliability with solid troubleshooting habits.</li>
+          <li>Document work so the next person can win faster.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>What I’m looking for</h2>
+        <ul>
+          <li>Roles where I can own improvements end-to-end.</li>
+          <li>Teams that value safety, quality, and repeatable results.</li>
+          <li>Environments where “done” means stable and documented.</li>
+        </ul>
+      </section>
+
+      <section class="card full">
+        <h2>Quick links</h2>
+        <p class="small">Replace these with your real links.</p>
+        <div class="buttonrow">
+          <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="projects.html">Projects</a>
+          <a class="btn" href="about.html">About</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small">
+      © <span id="year"></span> Your Name. Built for GitHub Pages.
+    </div>
+  </footer>
+
+  <script>
+    // Optional tiny script: keeps the footer year current (still "static" hosting-friendly).
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
