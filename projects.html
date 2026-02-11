@@ -1,1 +1,105 @@
-<PASTE PROJECTS HTML HERE>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Your Name</span>
+      </a>
+      <nav class="navlinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">Projects</div>
+      <h1>Selected work</h1>
+      <p>
+        Add 3–6 projects with outcomes (time saved, defects reduced, uptime improved, cost avoided).
+        Link to repos, docs, or photos when possible.
+      </p>
+    </section>
+
+    <div class="grid">
+      <article class="card">
+        <h2>Project A — Reliability Improvement</h2>
+        <p><strong>Outcome:</strong> Reduced downtime by X% by fixing root causes and improving PMs.</p>
+        <ul>
+          <li>Identified failure modes and prioritized fixes.</li>
+          <li>Updated work instructions and inspection checks.</li>
+          <li>Documented results and trained operators.</li>
+        </ul>
+        <div class="buttonrow">
+          <a class="btn" href="#" aria-label="Project A link">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Project B — Scrap Reduction</h2>
+        <p><strong>Outcome:</strong> Cut scrap by X% through earlier detection + process adjustment.</p>
+        <ul>
+          <li>Added in-process checks and clear pass/fail criteria.</li>
+          <li>Closed the loop with maintenance and quality.</li>
+          <li>Tracked weekly metrics and sustained gains.</li>
+        </ul>
+        <div class="buttonrow">
+          <a class="btn" href="#" aria-label="Project B link">Details</a>
+        </div>
+      </article>
+
+      <article class="card full">
+        <h2>Project list (compact)</h2>
+        <table class="table" aria-label="Project list">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Type</th>
+              <th>Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maintenance Standard Work</td>
+              <td>Process</td>
+              <td>More consistent troubleshooting + faster handoffs</td>
+            </tr>
+            <tr>
+              <td>TPM / PM Revision</td>
+              <td>Reliability</td>
+              <td>Fewer repeat failures and better uptime stability</td>
+            </tr>
+            <tr>
+              <td>Tooling / Fixture Upgrade</td>
+              <td>Manufacturing</td>
+              <td>Reduced variation and improved repeatability</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small">
+      © <span id="year"></span> Your Name.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
