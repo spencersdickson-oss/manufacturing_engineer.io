@@ -1,1 +1,73 @@
-<PASTE HOBBIES HTML HERE>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobbies | Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Your Name</span>
+      </a>
+      <nav class="navlinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html" aria-current="page">Hobbies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">Hobbies</div>
+      <h1>What I do outside work</h1>
+      <p>
+        Keep this page genuine and specific. 3–5 hobbies max, with a sentence on what you like about each.
+      </p>
+    </section>
+
+    <div class="grid">
+      <section class="card third">
+        <h2>Cars &amp; wrenching</h2>
+        <p>Diagnostics, electrical work, and keeping old stuff running.</p>
+      </section>
+
+      <section class="card third">
+        <h2>Fitness</h2>
+        <p>Lifting, consistency, and staying sharp.</p>
+      </section>
+
+      <section class="card third">
+        <h2>Learning</h2>
+        <p>Hands-on electronics projects, books, and practical skills.</p>
+      </section>
+
+      <section class="card full">
+        <h2>Photo / media section (optional)</h2>
+        <p class="small">
+          Add images by putting them in a folder like <code>/assets</code> and referencing them:
+          <code>&lt;img src="assets/photo.jpg" alt="..."&gt;</code>
+        </p>
+        <hr class="sep" />
+        <p class="small">Tip: GitHub Pages supports static images and simple embeds.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small">
+      © <span id="year"></span> Your Name.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
