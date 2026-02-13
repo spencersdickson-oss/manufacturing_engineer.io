@@ -260,3 +260,29 @@ footer{
   color: var(--muted);
   margin-top: 22px;
 }
+
+
+/* Embedded media (e.g., YouTube) */
+.media-embed{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background:#0b0f14;
+  border:1px solid rgba(34,48,74,.75);
+  border-radius:12px;
+  overflow:hidden;
+}
+.media-embed iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* Media stack captions */
+.media-stack figcaption{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:13px;
+}
