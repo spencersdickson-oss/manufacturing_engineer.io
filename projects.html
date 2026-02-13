@@ -170,21 +170,18 @@
             <!-- Videos (muted). Autoplay on hover via JS. -->
             <div class="video-grid" role="list">
               <figure class="video-card" role="listitem">
-                <video class="hover-play" muted playsinline loop preload="metadata"
-                  poster="assets/projects/project-02-casting-simulation/fill-temp-simulation-poster.jpg">
-                  <source src="assets/projects/project-02-casting-simulation/fill-temp-simulation.mp4" type="video/mp4" />
-                </video>
-                <figcaption><strong>Video:</strong> Fill + temperature evolution (ProCAST screen capture).</figcaption>
-              </figure>
+              <!-- top-left: 3× speed -->
+<video class="video-hover-play" data-speed="3"
+  muted playsinline loop
+  src="assets/projects/project-02-casting-simulation/fill-temp-simulation.mp4">
+</video>
 
-              <figure class="video-card" role="listitem">
-                <video class="hover-play" muted playsinline loop preload="metadata"
-                  poster="assets/projects/project-02-casting-simulation/pour-process-poster.jpg">
-                  <source src="assets/projects/project-02-casting-simulation/pour-process.mp4" type="video/mp4" />
-                </video>
-                <figcaption><strong>Video:</strong> Physical pour / execution footage (muted).</figcaption>
-              </figure>
-            </div>
+<!-- top-right: rotate left + normal speed -->
+<video class="video-hover-play video-rotate-left" data-speed="1"
+  muted playsinline loop
+  src="assets/projects/project-02-casting-simulation/pour-process.mp4">
+</video>
+  
 
             <!-- Three-card image row -->
             <div class="media-grid three" style="margin-top:12px;">
@@ -471,6 +468,25 @@
       });
     });
   </script>
+<script>
+  document.querySelectorAll('video.video-hover-play').forEach(video => {
+    const speed = video.dataset.speed ? parseFloat(video.dataset.speed) : 1.0;
+
+    video.muted = true;
+    video.playsInline = true;
+
+    video.addEventListener('mouseenter', () => {
+      video.currentTime = 0;
+      video.playbackRate = speed;
+      video.play().catch(()=>{});
+    });
+
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
 
 </body>
 </html>
